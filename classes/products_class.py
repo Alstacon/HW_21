@@ -4,7 +4,7 @@ class Products:
         self.product = product
         self.product_for_search = ''
 
-    def declension(self):
+    def declension(self) -> tuple[str, str]:
         if self.product in ['картошка', 'картошек', 'картох', 'картофелин', 'картофелину', 'картошечек', 'картошку']:
             self.product_for_search = 'картошка'
         if self.product in ['морковок', 'морковки', 'морковку', 'морковочку', 'морковей', 'моркови', 'морковь']:
