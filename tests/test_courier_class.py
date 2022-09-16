@@ -1,6 +1,6 @@
 import pytest
 
-from classes.courier_class import Courier
+from classes.courier import Courier
 from exceptions import ShopIsFull, NotEnoughProduct
 
 

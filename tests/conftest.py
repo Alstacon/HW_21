@@ -1,8 +1,8 @@
 import pytest
 
-from classes.request_class import Request
-from classes.shop_class import Shop
-from classes.store_class import Store
+from classes.request import Request
+from classes.shop import Shop
+from classes.store import Store
 
 
 @pytest.fixture

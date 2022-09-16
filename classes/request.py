@@ -1,5 +1,5 @@
 from exceptions import InvalidRequest
-from classes.products_class import Products
+from classes.products import Products
 
 
 class Request:

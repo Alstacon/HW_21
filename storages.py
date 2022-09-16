@@ -1,5 +1,5 @@
-from classes.shop_class import Shop
-from classes.store_class import Store
+from classes.shop import Shop
+from classes.store import Store
 
 
 store = Store({

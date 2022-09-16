@@ -1,5 +1,5 @@
 from exceptions import ShopIsFull, ProductNotFound, NotEnoughProduct
-from classes.store_class import Store
+from classes.store import Store
 
 
 class Shop(Store):

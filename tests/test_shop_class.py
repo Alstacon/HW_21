@@ -1,6 +1,5 @@
 import pytest as pytest
 
-from classes.shop_class import Shop
 from exceptions import ShopIsFull, ProductNotFound, NotEnoughProduct
 
 

@@ -1,6 +1,6 @@
-from classes.courier_class import Courier
+from classes.courier import Courier
 from exceptions import ShopIsFull, BaseError, NotEnoughProduct
-from classes.request_class import Request
+from classes.request import Request
 from storages import storages
 
 
@@ -42,4 +42,5 @@ def main():
             print(error.message)
 
 
-main()
+if __name__ == '__main__':
+    main()

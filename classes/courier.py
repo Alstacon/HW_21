@@ -1,4 +1,4 @@
-from classes.request_class import Request
+from classes.request import Request
 from exceptions import ProductNotFound
 
 

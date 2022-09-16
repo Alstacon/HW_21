@@ -1,5 +1,5 @@
 from exceptions import StoreIsFull, ProductNotFound, NotEnoughProduct
-from classes.storage_abs_class import Storage
+from classes.storage_abs import Storage
 
 
 class Store(Storage):
