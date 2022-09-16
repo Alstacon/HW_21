@@ -11,14 +11,14 @@ class Shop(Store):
             raise ShopIsFull
 
         else:
-            if name not in self._items.keys():
+            if not self._items.get(name):
                 self._items[name] = quantity
             else:
                 self._items[name] += quantity
 
     def remove(self, name: str, quantity: int) -> None:
-        if name not in self._items.keys():
-            raise ProductNotFound
+        self._items.get(name, ProductNotFound)
+
 
         if quantity <= self._items[name]:
             self._items[name] -= quantity
