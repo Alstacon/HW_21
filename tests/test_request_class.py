@@ -12,20 +12,20 @@ class TestRequestClass:
     def test_basic_request(self, storages):
         request = Request("Доставить 1 морковь со склада в магазин", storages)
         assert request.quantity == 1
-        assert request.sending_point == 'склада'
+        assert request.sending_point == 'склад'
         assert request.destination == 'магазин'
         assert request.product == 'морковь'
 
         request = Request("Доставить 1 морковочку со склада в магазин", storages)
         assert request.quantity == 1
-        assert request.sending_point == 'склада'
+        assert request.sending_point == 'склад'
         assert request.destination == 'магазин'
         assert request.product == 'морковочку'
         assert request.product_for_search == 'морковь'
 
         request = Request("Доставить всю морковочку из магазина на склад", storages)
         assert request.quantity == 'всю'
-        assert request.sending_point == 'магазина'
+        assert request.sending_point == 'магазин'
         assert request.destination == 'склад'
         assert request.product == 'морковочку'
         assert request.product_for_search == 'морковь'

@@ -17,8 +17,8 @@ class Shop(Store):
                 self._items[name] += quantity
 
     def remove(self, name: str, quantity: int) -> None:
-        self._items.get(name, ProductNotFound)
-
+        if not self._items.get(name):
+            raise ProductNotFound
 
         if quantity <= self._items[name]:
             self._items[name] -= quantity

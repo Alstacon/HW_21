@@ -26,7 +26,8 @@ class Store(Storage):
                 self._items[name] += quantity
 
     def remove(self, name, quantity):
-        self._items.get(name, ProductNotFound)
+        if not self._items.get(name):
+            raise ProductNotFound
 
         if quantity <= self._items[name]:
             self._items[name] -= quantity
